@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop | Catalog</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/59d4e70edb.js" crossorigin="anonymous"></script>
 </head>
 
@@ -44,8 +47,10 @@
                             <h2 class="catmenu__active">new arrivals</h2>
                         </div>
                         <div class="catmenu__right">
-                            <a class="catmenu__category" href="#">home /</a>
-                            <a class="catmenu__category" href="#">men /</a>
+                            <a class="catmenu__category" href="#">home</a>
+                            <p class="catmenu__slash">/</p>
+                            <a class="catmenu__category" href="#">men</a>
+                            <p class="catmenu__slash">/</p>
                             <a class="catmenu__category" href="#">new arrivals</a>
                         </div>
                     </div>
@@ -53,24 +58,133 @@
 
                 <section class="catalog container">
                     <div class="catalog__filters">
-                        <div class="catalog__burger">
-                            FILTER<img class="catalog__burger--icon" src="img/catalog/cat_burger.svg" alt="filters">
-                        </div>
+                        <details class="burger-filter">
+                            <summary class="burger__open">filter <svg width="15" height="10" viewBox="0 0 15 10"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                                </svg>
+                            </summary>
+
+                            <div class="burger__categories">
+                                <details class="filter-title">
+                                    <summary class="filter-category">category</summary>
+                                    <ul class="filter-list">
+                                        <li class="filter-item"><a href="" class="filter-link">Accessories</a></li>
+                                        <li class="filter-item"><a href="" class="filter-link">Bags</a></li>
+                                        <li class="filter-item"><a href="" class="filter-link">Denim</a></li>
+                                        <li class="filter-item"><a href="" class="filter-link">Hoodies & Sweatshirts</a>
+                                        </li>
+                                        <li class="filter-item"><a href="" class="filter-link">Jackets & Coats</a>
+                                        </li>
+                                        <li class="filter-item"><a href="" class="filter-link">Polos</a>
+                                        </li>
+                                        <li class="filter-item"><a href="" class="filter-link">Shirts</a>
+                                        </li>
+                                        <li class="filter-item"><a href="" class="filter-link">Shoes</a>
+                                        </li>
+                                        <li class="filter-item"><a href="" class="filter-link">Sweaters & Knits</a>
+                                        </li>
+                                        <li class="filter-item"><a href="" class="filter-link">T-Shirts</a>
+                                        </li>
+                                        <li class="filter-item"><a href="" class="filter-link">Tanks</a>
+                                        </li>
+                                    </ul>
+                                </details>
+
+                                <details class="filter-title">
+                                    <summary class="filter-category">brand</summary>
+                                    <ul class="filter-list">
+                                        <li class="filter-item"><a href="" class="filter-link">qweqweqw</a></li>
+                                        <li class="filter-item"><a href="" class="filter-link">qweqweqw</a></li>
+                                        <li class="filter-item"><a href="" class="filter-link">qweqweqw</a></li>
+                                        <li class="filter-item"><a href="" class="filter-link">qweqweqw</a></li>
+                                    </ul>
+                                </details>
+
+                                <details class="filter-title">
+                                    <summary class="filter-category">designer</summary>
+                                    <ul class="filter-list">
+                                        <li class="filter-item"><a href="" class="filter-link">qweqweqw</a></li>
+                                        <li class="filter-item"><a href="" class="filter-link">qweqweqw</a></li>
+                                        <li class="filter-item"><a href="" class="filter-link">qweqweqw</a></li>
+                                        <li class="filter-item"><a href="" class="filter-link">qweqweqw</a></li>
+                                    </ul>
+                                </details>
+
+                            </div>
+                        </details>
+
                         <div class="catalog__filter">
-                            <div class="catalog__dropdown">TRENDING NOW <img class="catalog__dropdown--icon"
-                                    src="img/catalog/cat_dropdown.svg" alt="dropdown"></div>
-                            <div class="catalog__dropdown">SIZE <img class="catalog__dropdown--icon"
-                                    src="img/catalog/cat_dropdown.svg" alt="dropdown">
-                            </div>
-                            <div class="catalog__dropdown">PRICE <img class="catalog__dropdown--icon"
-                                    src="img/catalog/cat_dropdown.svg" alt="dropdown">
-                            </div>
+                            <details class="catalog__dropdown">
+                                <summary class="dropdown-summary">
+                                    TRENDING NOW <img class="catalog__dropdown--icon" src="img/catalog/cat_dropdown.svg"
+                                        alt="dropdown">
+                                </summary>
+                                <div class="dropdown__choice">
+                                    <input type="checkbox" id="puffer" name="puffer" value="puffer">
+                                    <label for="puffer"> Puffer sleeve</label><br>
+                                    <input type="checkbox" id="beads" name="beads" value="beads">
+                                    <label for="beads"> Beads</label>
+                                </div>
+                            </details>
+
+                            <details class="catalog__dropdown">
+                                <summary class="dropdown-summary"> SIZE <img class="catalog__dropdown--icon"
+                                        src="img/catalog/cat_dropdown.svg" alt="dropdown">
+                                </summary>
+                                <div class="dropdown__choice">
+                                    <input type="checkbox" id="xs" name="xs" value="XS">
+                                    <label for="xs"> XS</label><br>
+                                    <input type="checkbox" id="s" name="s" value="S">
+                                    <label for="s"> S</label><br>
+                                    <input type="checkbox" id="m" name="m" value="M">
+                                    <label for="m"> M</label><br>
+                                    <input type="checkbox" id="l" name="l" value="L">
+                                    <label for="l"> L</label>
+                                </div>
+                            </details>
+
+                            <details class="catalog__dropdown">
+                                <summary class="dropdown-summary">
+                                    PRICE <img class="catalog__dropdown--icon" src="img/catalog/cat_dropdown.svg"
+                                        alt="dropdown">
+                                </summary>
+                                <!-- <div class="dropdown__choice">
+                                    <input type="checkbox" id="xs" name="xs" value="XS">
+                                    <label for="xs"> XS</label><br>
+                                </div> -->
                         </div>
                     </div>
 
                     <div class="catalog__list">
                         <div class="catalog__card">
-                            <img src="img/catalog/item1.jpg" alt="item">
+                            <div class="card__image">
+                                <img src="img/catalog/item1.jpg" alt="item">
+                                <div class="card__overlay">
+                                    <button class="card__button">
+                                        <img src="img/catalog/card_cart.svg" alt="cart">
+                                        Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="catalog__cardinfo">
+                                <a class="catalog__product" href="product.html">ELLERY X M'O CAPSULE</a>
+                                <p class="catalog__description">Known for her sculptural takes on traditional
+                                    tailoring,
+                                    Australian
+                                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <h4 class="catalog__itemprice">$52.00</h4>
+                            </div>
+                        </div>
+                        <div class="catalog__card">
+                            <div class="card__image">
+                                <img src="img/catalog/item2.jpg" alt="item">
+                                <div class="card__overlay">
+                                    <button class="card__button">
+                                        <img src="img/catalog/card_cart.svg" alt="cart">
+                                        Add to cart</button>
+                                </div>
+                            </div>
                             <div class="catalog__cardinfo">
                                 <h3 class="catalog__product">ELLERY X M'O CAPSULE</h3>
                                 <p class="catalog__description">Known for her sculptural takes on traditional tailoring,
@@ -80,7 +194,14 @@
                             </div>
                         </div>
                         <div class="catalog__card">
-                            <img src="img/catalog/item2.jpg" alt="item">
+                            <div class="card__image">
+                                <img src="img/catalog/item3.jpg" alt="item">
+                                <div class="card__overlay">
+                                    <button class="card__button">
+                                        <img src="img/catalog/card_cart.svg" alt="cart">
+                                        Add to cart</button>
+                                </div>
+                            </div>
                             <div class="catalog__cardinfo">
                                 <h3 class="catalog__product">ELLERY X M'O CAPSULE</h3>
                                 <p class="catalog__description">Known for her sculptural takes on traditional tailoring,
@@ -90,7 +211,14 @@
                             </div>
                         </div>
                         <div class="catalog__card">
-                            <img src="img/catalog/item3.jpg" alt="item">
+                            <div class="card__image">
+                                <img src="img/catalog/item4.jpg" alt="item">
+                                <div class="card__overlay">
+                                    <button class="card__button">
+                                        <img src="img/catalog/card_cart.svg" alt="cart">
+                                        Add to cart</button>
+                                </div>
+                            </div>
                             <div class="catalog__cardinfo">
                                 <h3 class="catalog__product">ELLERY X M'O CAPSULE</h3>
                                 <p class="catalog__description">Known for her sculptural takes on traditional tailoring,
@@ -100,7 +228,14 @@
                             </div>
                         </div>
                         <div class="catalog__card">
-                            <img src="img/catalog/item4.jpg" alt="item">
+                            <div class="card__image">
+                                <img src="img/catalog/item5.jpg" alt="item">
+                                <div class="card__overlay">
+                                    <button class="card__button">
+                                        <img src="img/catalog/card_cart.svg" alt="cart">
+                                        Add to cart</button>
+                                </div>
+                            </div>
                             <div class="catalog__cardinfo">
                                 <h3 class="catalog__product">ELLERY X M'O CAPSULE</h3>
                                 <p class="catalog__description">Known for her sculptural takes on traditional tailoring,
@@ -110,7 +245,14 @@
                             </div>
                         </div>
                         <div class="catalog__card">
-                            <img src="img/catalog/item5.jpg" alt="item">
+                            <div class="card__image">
+                                <img src="img/catalog/item6.jpg" alt="item">
+                                <div class="card__overlay">
+                                    <button class="card__button">
+                                        <img src="img/catalog/card_cart.svg" alt="cart">
+                                        Add to cart</button>
+                                </div>
+                            </div>
                             <div class="catalog__cardinfo">
                                 <h3 class="catalog__product">ELLERY X M'O CAPSULE</h3>
                                 <p class="catalog__description">Known for her sculptural takes on traditional tailoring,
@@ -120,7 +262,14 @@
                             </div>
                         </div>
                         <div class="catalog__card">
-                            <img src="img/catalog/item6.jpg" alt="item">
+                            <div class="card__image">
+                                <img src="img/catalog/item7.jpg" alt="item">
+                                <div class="card__overlay">
+                                    <button class="card__button">
+                                        <img src="img/catalog/card_cart.svg" alt="cart">
+                                        Add to cart</button>
+                                </div>
+                            </div>
                             <div class="catalog__cardinfo">
                                 <h3 class="catalog__product">ELLERY X M'O CAPSULE</h3>
                                 <p class="catalog__description">Known for her sculptural takes on traditional tailoring,
@@ -130,7 +279,14 @@
                             </div>
                         </div>
                         <div class="catalog__card">
-                            <img src="img/catalog/item6.jpg" alt="item">
+                            <div class="card__image">
+                                <img src="img/catalog/item8.jpg" alt="item">
+                                <div class="card__overlay">
+                                    <button class="card__button">
+                                        <img src="img/catalog/card_cart.svg" alt="cart">
+                                        Add to cart</button>
+                                </div>
+                            </div>
                             <div class="catalog__cardinfo">
                                 <h3 class="catalog__product">ELLERY X M'O CAPSULE</h3>
                                 <p class="catalog__description">Known for her sculptural takes on traditional tailoring,
@@ -140,17 +296,15 @@
                             </div>
                         </div>
                         <div class="catalog__card">
-                            <img src="img/catalog/item6.jpg" alt="item">
-                            <div class="catalog__cardinfo">
-                                <h3 class="catalog__product">ELLERY X M'O CAPSULE</h3>
-                                <p class="catalog__description">Known for her sculptural takes on traditional tailoring,
-                                    Australian
-                                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                                <h4 class="catalog__itemprice">$52.00</h4>
+                            <div class="card__image">
+                                <img src="img/catalog/item9.jpg" alt="item">
+                                <div class="card__overlay">
+                                    <button class="card__button">
+                                        <img src="img/catalog/card_cart.svg" alt="cart">
+                                        Add to cart</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="catalog__card">
-                            <img src="img/catalog/item6.jpg" alt="item">
+
                             <div class="catalog__cardinfo">
                                 <h3 class="catalog__product">ELLERY X M'O CAPSULE</h3>
                                 <p class="catalog__description">Known for her sculptural takes on traditional tailoring,
@@ -161,20 +315,18 @@
                         </div>
                     </div>
 
-                    <div class="catalog__pagination">
+                    <div class="pagination">
 
-                        <a class="catalog__pagination--nav" href="#"><img src="img/catalog/pagination_left.svg"
-                                alt="left"></a>
-                        <a class="catalog__pagination--page" href="#">1</a>
-                        <a class="catalog__pagination--page" href="#">2</a>
-                        <a class="catalog__pagination--page" href="#">3</a>
-                        <a class="catalog__pagination--page" href="#">4</a>
-                        <a class="catalog__pagination--page" href="#">5</a>
-                        <a class="catalog__pagination--page" href="#">6</a>
-                        <a class="catalog__pagination--page dots" href="#">...</a>
-                        <a class="catalog__pagination--page" href="#">20</a>
-                        <a class="catalog__pagination--nav" href="#"><img src="img/catalog/pagination_right.svg"
-                                alt="right"></a>
+                        <a class="pagination__nav" href="#"><img src="img/catalog/pagination_left.svg" alt="left"></a>
+                        <a class="pagination__page" href="#">1</a>
+                        <a class="pagination__page" href="#">2</a>
+                        <a class="pagination__page" href="#">3</a>
+                        <a class="pagination__page" href="#">4</a>
+                        <a class="pagination__page" href="#">5</a>
+                        <a class="pagination__page" href="#">6</a>
+                        <a class="pagination__page dots" href="#">...</a>
+                        <a class="pagination__page" href="#">20</a>
+                        <a class="pagination__nav" href="#"><img src="img/catalog/pagination_right.svg" alt="right"></a>
 
                     </div>
                 </section>
