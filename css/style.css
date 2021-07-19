@@ -25,6 +25,10 @@
     padding: 19px 0;
 }
 
+.menu > a {
+    text-decoration: none;
+}
+
 .menu__flex {
     display: flex;
     justify-content: space-between;

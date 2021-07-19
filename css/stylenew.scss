@@ -653,3 +653,131 @@ margin-right: 7px;
         border: 1px solid #A4A4A4;
     }
 }
+
+.registration {
+    display: flex;
+    justify-content: space-between;
+}
+
+.account {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -32px;
+    margin-bottom: 96px;
+    
+
+    &__heading {
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+
+    & fieldset {
+        border: 0;
+
+        &:first-child {
+            margin-bottom: 33px;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        border: 1px solid #A4A4A4;
+        padding: 12px 17px 15px;
+        margin-bottom: 21px;
+        box-sizing: border-box;
+
+        &::-webkit-input-placeholder {
+            color: #B1B1B1;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+
+    & label {
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #000000;
+
+        & > input {
+            vertical-align: middle;
+            margin-right: 10px;
+        } 
+    }
+
+    &__gender {
+        margin-top: 12px;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+        margin-bottom: 39px;
+    }
+
+    &__button {
+        width: 167px;
+        height: 50px;
+        background-color: $accentcolor;
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 17px;
+        border: none;
+        padding: 16px 29px;
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.5) rotate(360deg);
+        }
+    }
+
+}
+
+.loyalty {
+    max-width: 652px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -32px;
+
+    &__heading {
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+    }
+
+    & > ul {
+        list-style: none;
+        margin-top: 22px;
+
+        & li {
+            margin-bottom: 16px;
+            vertical-align: center;
+
+            &:before {
+                content: url(../img/loyalty_check.svg);
+                margin-right: 23px;
+            }
+        }
+
+        
+    }
+    
+        
+}

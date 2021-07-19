@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Registration</title>
+    <link rel="stylesheet" href="css/stylenew.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/59d4e70edb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="menu">
+                <div class="container menu__flex">
+                    <div class="menu__left">
+                        <a class="menu__logo" href="index.html">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                        <img class="menu__search" src="img/search.svg" alt="search">
+                    </div>
+
+                    <div class="menu__right">
+                        <a class="menu__link" href="/">
+                            <img src="img/menu.svg" alt="menu">
+                        </a>
+                        <a class="menu__link" href="#">
+                            <img src="img/account.svg" alt="account">
+                        </a>
+                        <a class="menu__link" href="cart.html">
+                            <img src="img/cart.svg" alt="shopping cart">
+                        </a>
+                    </div>
+
+                </div>
+            </header>
+
+            <main>
+                <section class="carthead">
+                    <div class="container carthead__flex">
+                        <h2 class="carthead__active">registration</h2>
+                    </div>
+                </section>
+
+                <section class="registration container">
+                    <form class="account" action="#">
+                        <fieldset>
+                            <h3 class="account__heading">Your Name</h3>
+                            <input class="account__input" type="text" minlength="2" maxlength="15"
+                                placeholder="First Name"><br>
+                            <input class="account__input" type="text" minlength="2" maxlength="15"
+                                placeholder="Last Name"><br>
+                            <div class="account__gender"></div>
+                            <label><input type="radio" name="gender" checked> Male</label>
+                            <label><input type="radio" name="gender"> Female</label>
+                        </fieldset>
+                        <fieldset>
+                            <h3 class="account__heading">Login details</h3>
+                            <input class="account__input" type="email" placeholder="Email"><br>
+                            <input class="account__input" type="password" placeholder="Password"><br>
+                        </fieldset>
+                        <p class="account__text">Please use 8 or more characters, with at least 1 number and a mixture
+                            of uppercase and lowercase letters</p>
+                        <input class="account__button" type="submit" value="JOIN NOW  &rarr;">
+                    </form>
+                    <div class="loyalty">
+                        <h3 class="loyalty__heading">LOYALTY HAS ITS PERKS</h3>
+                        <p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock
+                            serious perks. Starting with these as soon as you join:</p>
+                        <ul class="loyalty__text">
+                            <li>15% off welcome offer</li>
+                            <li>Free shipping, returns and exchanges on all orders</li>
+                            <li>$10 off a purchase on your birthday</li>
+                            <li>Early access to products</li>
+                            <li>Exclusive offers & rewards</li>
+                        </ul>
+                    </div>
+                </section>
+
+            </main>
+
+            <aside class="lead">
+                <div class="lead__transparent">
+                    <div class="lead__info container">
+                        <div class="lead__review">
+                            <img class="lead__customer" src="img/review.png" alt="cutomer photo">
+                            <p class="lead__cite">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
+                                    class="italic">a pulvinar purus condimentum</span>“</p>
+                        </div>
+                        <div class="lead__subscription">
+                            <h3 class="lead__cta"> <span class="lead__bold">SUBSCRIBE</span><br>
+                                FOR OUR NEWLETTER AND PROMOTION</h3>
+                            <form class="lead__form" action="#">
+                                <input class="lead__email" type="email" placeholder="Enter Your Email">
+                                <input class="lead__button" type="submit" value="Subscribe">
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="bottom">
+            <footer class="footer">
+                <div class="footer__flex container">
+                    <div class="footer__left">
+                        <p class="footer__text">&copy; 2021 Brand All Rights Reserved.</p>
+                    </div>
+                    <div class="footer__right">
+                        <a class="footer__sm" href="/"><i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="footer__sm" href="/">
+                            <div></div>
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="footer__sm" href="/">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                        <a class="footer__sm" href="/">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
