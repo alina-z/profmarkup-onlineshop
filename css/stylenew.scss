@@ -978,7 +978,7 @@ a.catalog__link:hover, a.catalog__link:active {
 }
 
 .cart {
-    margin-bottom: 72px;
+    margin-bottom: 128px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1010,7 +1010,7 @@ a.catalog__link:hover, a.catalog__link:active {
     &__info {
         padding: 22px 31px;
         position: relative;
-        width: 390px;
+        width: 100%;
     }
 
     &__cross {
@@ -1187,12 +1187,9 @@ a.catalog__link:hover, a.catalog__link:active {
 }
 
 .refuse {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 128px;
-
     &__flex {
-        width: 652px;
+        margin-top: 32px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -1217,14 +1214,16 @@ a.catalog__link:hover, a.catalog__link:active {
 .registration {
     display: flex;
     justify-content: space-between;
+    margin-top: -32px;
+    margin-bottom: 96px;
 }
 
 .account {
     width: 360px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    margin-top: -32px;
-    margin-bottom: 96px;
+    
     
 
     &__heading {
@@ -1303,7 +1302,6 @@ a.catalog__link:hover, a.catalog__link:active {
     max-width: 652px;
     display: flex;
     flex-direction: column;
-    margin-top: -32px;
 
     &__heading {
         margin-bottom: 20px;
@@ -1461,6 +1459,63 @@ a.catalog__link:hover, a.catalog__link:active {
         margin-top: 0;
     }
 
+    .registration {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .account {
+        max-width: 48%;
+    }
+
+    .loyalty {
+        max-width: 48%;
+
+        &__heading {
+            font-size: 16px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+
+    .carthead {
+        margin-bottom: 59px;
+    }
+
+    .cart {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shoppinglist {
+        margin-bottom: 64px;
+        width: 98%;
+    }
+
+    .refuse {
+        &__flex {
+            justify-content: center;
+        }
+
+        &__button:first-child {
+            margin-right: 49px;
+        }
+    }
+
+    .address {
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+
+    .calc {
+        margin-top: 39px;
+    }
+
+    .checkout {
+        flex-direction: row;
+    }
 }
 
 // mobile
@@ -1603,5 +1658,84 @@ a.catalog__link:hover, a.catalog__link:active {
         &__filters {
             font-size: 10px;
         }
+    }
+
+    .registration {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .account {
+        margin-bottom: 40px;
+        max-width: 96%;
+    }
+
+    .loyalty {
+        max-width: 96%;
+    }
+
+    .carthead {
+        margin-bottom: 39px;
+        &__flex {
+            justify-content: center;
+        }
+    }
+
+    .shoppinglist {
+        &__card {
+            &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+        }
+        
+        &__image {
+            max-width: 144px;
+            max-height: 188px;
+        }
+
+        &__info {
+            padding: 13px 17px;
+        }
+
+        &__cross {
+            right: 17px;
+            & img {
+                width: auto; 
+                height: 10px;
+            }
+            
+        }
+
+        &__name {
+            font-size: 16px;
+            margin-bottom: 25px;
+            line-height: 19px;
+        } 
+        
+        &__detail, &__quantity &__number {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        &__detail {
+            margin-bottom: 3px;
+        }
+    }
+
+    .refuse {
+        &__flex {
+            margin-top: -2px;
+        }
+
+        &__button {
+            font-size: 12px;
+            line-height: 14px;
+            padding: 9px 19px;
+        }
+    }
+
+    .checkout {
+        flex-direction: column;
     }
 }
