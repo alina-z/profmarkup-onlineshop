@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop | Main</title>
+    <title>Shop | Catalog</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/59d4e70edb.js" crossorigin="anonymous"></script>
 </head>
@@ -16,7 +16,7 @@
             <header class="menu">
                 <div class="container menu__flex">
                     <div class="menu__left">
-                        <a class="menu__logo" href="#">
+                        <a class="menu__logo" href="index.html">
                             <img src="img/logo.png" alt="logo">
                         </a>
                         <img class="menu__search" src="img/search.svg" alt="search">
@@ -38,50 +38,35 @@
             </header>
 
             <main>
-                <section class="intro">
-                    <div class="container intro__flex">
-                        <div class="intro__heading">
-                            <h1><span class="intro__bold">the brand</span><br>of luxurious <span
-                                    class="text__red">fashion</span>
-                            </h1>
+                <section class="catmenu">
+                    <div class="container catmenu__flex">
+                        <div class="catmenu__left">
+                            <h2 class="catmenu__active">new arrivals</h2>
                         </div>
-                    </div>
-                </section>
-
-                <section class="category container">
-                    <div class="category__item">
-                        <div class="category__text">
-                            <h2><span class="category__white">30% OFF</span><br>
-                                <span class="text__red">FOR WOMEN</span>
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="category__item">
-                        <div class="category__text">
-                            <h2><span class="category__white">HOT DEAL</span><br>
-                                <span class="text__red">FOR MEN</span>
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="category__item">
-                        <div class="category__text">
-                            <h2><span class="category__white">NEW ARRIVALS</span><br>
-                                <span class="text__red">FOR KIDS</span>
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="category__item">
-                        <div class="category__text">
-                            <h2><span class="category__white">LUXIROUS & TRENDY</span><br>
-                                <span class="text__red">ACCESORIES</span>
-                            </h2>
+                        <div class="catmenu__right">
+                            <a class="catmenu__category" href="#">home /</a>
+                            <a class="catmenu__category" href="#">men /</a>
+                            <a class="catmenu__category" href="#">new arrivals</a>
                         </div>
                     </div>
                 </section>
 
                 <section class="catalog container">
-                    <h3 class="catalog__heading">Fetured Items</h3>
-                    <p class="catalog__introtext">Shop for items based on what we featured in this week</p>
+                    <div class="catalog__filters">
+                        <div class="catalog__burger">
+                            FILTER<img class="catalog__burger--icon" src="img/catalog/cat_burger.svg" alt="filters">
+                        </div>
+                        <div class="catalog__filter">
+                            <div class="catalog__dropdown">TRENDING NOW <img class="catalog__dropdown--icon"
+                                    src="img/catalog/cat_dropdown.svg" alt="dropdown"></div>
+                            <div class="catalog__dropdown">SIZE <img class="catalog__dropdown--icon"
+                                    src="img/catalog/cat_dropdown.svg" alt="dropdown">
+                            </div>
+                            <div class="catalog__dropdown">PRICE <img class="catalog__dropdown--icon"
+                                    src="img/catalog/cat_dropdown.svg" alt="dropdown">
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="catalog__list">
                         <div class="catalog__card">
@@ -144,8 +129,54 @@
                                 <h4 class="catalog__itemprice">$52.00</h4>
                             </div>
                         </div>
+                        <div class="catalog__card">
+                            <img src="img/catalog/item6.jpg" alt="item">
+                            <div class="catalog__cardinfo">
+                                <h3 class="catalog__product">ELLERY X M'O CAPSULE</h3>
+                                <p class="catalog__description">Known for her sculptural takes on traditional tailoring,
+                                    Australian
+                                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <h4 class="catalog__itemprice">$52.00</h4>
+                            </div>
+                        </div>
+                        <div class="catalog__card">
+                            <img src="img/catalog/item6.jpg" alt="item">
+                            <div class="catalog__cardinfo">
+                                <h3 class="catalog__product">ELLERY X M'O CAPSULE</h3>
+                                <p class="catalog__description">Known for her sculptural takes on traditional tailoring,
+                                    Australian
+                                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <h4 class="catalog__itemprice">$52.00</h4>
+                            </div>
+                        </div>
+                        <div class="catalog__card">
+                            <img src="img/catalog/item6.jpg" alt="item">
+                            <div class="catalog__cardinfo">
+                                <h3 class="catalog__product">ELLERY X M'O CAPSULE</h3>
+                                <p class="catalog__description">Known for her sculptural takes on traditional tailoring,
+                                    Australian
+                                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <h4 class="catalog__itemprice">$52.00</h4>
+                            </div>
+                        </div>
                     </div>
-                    <a class="catalog__link" href="catalog.html">Browse All Products</a>
+
+                    <div class="catalog__pagination">
+
+                        <a class="catalog__pagination--nav" href="#"><img src="img/catalog/pagination_left.svg"
+                                alt="left"></a>
+                        <a class="catalog__pagination--page" href="#">1</a>
+                        <a class="catalog__pagination--page" href="#">2</a>
+                        <a class="catalog__pagination--page" href="#">3</a>
+                        <a class="catalog__pagination--page" href="#">4</a>
+                        <a class="catalog__pagination--page" href="#">5</a>
+                        <a class="catalog__pagination--page" href="#">6</a>
+                        <a class="catalog__pagination--page dots" href="#">...</a>
+                        <a class="catalog__pagination--page" href="#">20</a>
+                        <a class="catalog__pagination--nav" href="#"><img src="img/catalog/pagination_right.svg"
+                                alt="right"></a>
+
+                    </div>
                 </section>
 
                 <section class="advantage">
